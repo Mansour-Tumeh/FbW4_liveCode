@@ -61,6 +61,6 @@ async function getUsers(){
 
     return data
 }
-
+//Call the function
 getUsers().then(users => console.log(users))
 
