@@ -1,0 +1,14 @@
+Remove Vowels from a string :
+Write a regular expression that removes all vowels from a string. 
+
+Examples
+removeVowels("candy") ➞ "cndy"
+
+removeVowels("hello") ➞ "hll"
+//Note : The "e" is removed, but also the "o" is removed
+
+removeVowels("apple") ➞ "ppl"
+
+Notes
+
+removeVowels actually does remove all vowels.

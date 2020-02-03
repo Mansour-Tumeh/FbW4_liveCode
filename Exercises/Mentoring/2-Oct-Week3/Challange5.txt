@@ -1,0 +1,31 @@
+Letters Only
+
+Write a function that removes any non-letters from a string, returning a well-known film title.
+
+Examples
+lettersOnly("R!=:~0o0./c&}9k`60=y") ➞ "Rocky"
+
+lettersOnly("^,]%4B|@56a![0{2m>b1&4i4") ➞ "Bambi"
+
+lettersOnly("^U)6$22>8p).") ➞ "Up"
+
+Resources
+1- String​.prototype​.replace()
+developer.mozilla.org
+
+2- String.prototype.match()
+developer.mozilla.org
+Retrieves the result of matching a string against a regular expression.
+
+3- RegExp [^abc] Expression
+www.w3schools.com
+Used to find any character NOT between the brackets. The characters inside the brackets can be any characters or span of characters: [abcde..] - Any character between t …
+
+4- Remove Non-Letters from a String
+www.codecodex.com
+if buff's content is: "15+41-2Hel54lo **1212 Wor2ld! Ho5w Are 6996 Yo7u?" 
+then the content of buff_02 
+will be: "HelloWorldHowAreYou"
+
+Notes
+See the Resources section for more information on JavaScript string methods.

@@ -1,0 +1,12 @@
+Write a function to advice the customer 
+which city he should visit among array of cities.
+
+The prefered city has less population, and situated
+in Europe.
+
+the fucntion has one argument (arrayOfcities) and
+each city is an Object with three properties:
+1.	name  2.	population  3.	continent
+
+the fucntion returns an object (city) which includes 
+additional property (advice : 'Positive') 
