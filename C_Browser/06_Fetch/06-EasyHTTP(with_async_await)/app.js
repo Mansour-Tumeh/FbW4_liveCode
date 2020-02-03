@@ -18,11 +18,11 @@ const user = {
 // .catch(er => console.log(er))
 
 //Update single User on Server
-http.put('https://jsonplaceholder.typicode.com/users/7', user)
-.then(val => console.log(val))
-.catch(er => console.log(er))
+// http.put('https://jsonplaceholder.typicode.com/users/7', user)
+// .then(val => console.log(val))
+// .catch(er => console.log(er))
 
 //Delete User
-// http.delete('https://jsonplaceholder.typicode.com/users/-1')
-// .then(val=>console.log(val))
-// .catch(er=>console.log(er))
+http.delete('https://jsonplaceholder.typicode.com/users/1')
+.then(val=>console.log(`User has been deleted ${val}`))
+.catch(er=>console.log(er))
