@@ -1,0 +1,31 @@
+[
+{
+    "firstName":"Safwan",
+    "lastName":"Kherallah",
+    "email":"safwan.kherallah@gmail.com"
+},{
+    "firstName":"Lana",
+    "lastName":"Maksic",
+    "email":"lana.maksic@gmail.com"
+},{
+    "firstName":"Jack",
+    "lastName":"Radan",
+    "email":"jay.radan@gmail.com"
+},{
+    "firstName":"Eren",
+    "lastName":"Yilmaz",
+    "email":"eren.yilmaz@gmail.com"
+},{
+    "firstName":"Ali",
+    "lastName":"Alhayek",
+    "email":"ali.hayek@gmail.com"
+},{
+    "firstName":"Javier",
+    "lastName":"Monteros",
+    "email":"javier.moteros@gmail.com"
+},{
+    "firstName":"Larry",
+    "lastName": "Samson",
+    "email": "lsamson@gmail.com"
+}
+]
