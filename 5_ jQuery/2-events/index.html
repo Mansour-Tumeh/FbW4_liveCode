@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery | Events</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+ 
+   <style>
+    body{
+        font-size: 17px;
+        font-family: arial;
+        background: #f4f4f4;
+        line-height: 1.5em;
+    }
+    header{
+        background: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 4px #000 solid;
+        margin-bottom: 10px;
+    }
+
+    #container{
+        width: 90%;
+        margin: auto;
+        padding: 10px
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>jQuery | Events</h1>
+    </header>
+        <div id="coords"></div>
+        <div id="container">
+            <h3>Mouse Events</h3>
+            <button id="btn1" class="btnClass">Button 1</button>
+            <button id="btn2">Button 2</button>
+            <p class="para1">jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.</p>
+        </div>
+        <hr>
+        <div id="res"></div>
+        <form id="form">
+            <label for="name">Name</label><br>
+            <input type="text" name="name" id="name"><br>
+            
+            <label for="email">Email</label><br>
+            <input type="text" name="email" id="email"><br>
+
+            <label for="gender">Gender</label><br>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br>
+            <input type="submit" value="Submit">
+        </form>
+        <script>
+                $(document).ready(function (){
+                /*
+                   $('#btn1').click(function(){
+                        alert('Button 1 is clicked !!!')
+                    })
+                    
+               
+                $('#btn1').on('click',function(){
+                        alert('Button 1 is clicked !!!')
+                    })
+               
+                 
+                 $('#btn1').on('click',function(){
+                       // $('.para1').hide()
+                        
+                        $('.para1').toggle()
+                    })
+                    $('#btn2').on('click',function(){
+                        $('.para1').show()
+                    })
+                    
+                    $('#btn1').dblclick(function(){
+                        $('.para1').toggle()
+                    })
+                    
+                    $('#btn1').hover(function(){
+                        $('.para1').toggle()
+                    })
+                    $('#btn1').on('mouseenter',function(){
+                        $('.para1').toggle()
+                    })
+                    $('#btn1').on('mouseleave',function(){
+                        $('.para1').toggle()
+                    })
+                    $('#btn1').on('mousemove',() => {
+                        $('.para1').toggle()
+                    })
+                    $('#btn1').on('mousedown',function(){
+                        $('.para1').toggle()
+                    })
+                    $('#btn1').on('mouseup',function(){
+                        $('.para1').toggle()
+                    })
+                    $('#btn1').click(function(e){
+                       alert(e.currentTarget.id)
+                       alert(e.target.innerHTML)
+                       alert(e.target.outerHTML)
+                       alert(e.target.className)
+                    })
+                    $(document).on('mousemove', e=>{
+                        $('#coords').html('Coords: Y: '+ e.clientY+" X: "+e.clientX)
+                    })
+
+                    $('input').focus(function(){
+                      //  alert('Focus')
+                      $(this).css('background','#ccc')
+                    })
+                    $('input').blur(function(){
+                      $(this).css('background','')
+                    })
+                    $('input').keydown(e =>{
+                        $('#res').html(`You typed letter  : ${e.target.value}`)
+                    })
+
+                    $('input').keyup(e =>{
+                        $('#res').html(`You typed letter  : ${e.target.value}`)
+                    })
+
+                    $('select#gender').change(e =>{
+                        $('#res').html(`You've selected : ${e.target.value}`)
+                    })*/
+                    $('#form').submit(e=>{
+                        e.preventDefault();
+                        let name = $('#name').val();
+                        let email = $('#email').val();
+                        $('#res').html(`Your Name : ${name} and Email is ${email}`)
+                    })
+                })
+               
+                </script>
+        
+    </body>
+    </html>
