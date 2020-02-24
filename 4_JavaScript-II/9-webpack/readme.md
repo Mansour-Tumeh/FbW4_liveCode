@@ -22,4 +22,6 @@
 
 12- in index.js we import the js code 
 
+13- npm run build
+
 

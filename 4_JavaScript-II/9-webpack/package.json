@@ -9,7 +9,7 @@
     "start:dev": "webpack-dev-server"
   },
   "keywords": [],
-  "author": "Mansoue Tumeh",
+  "author": "FbW4",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.6.0",
