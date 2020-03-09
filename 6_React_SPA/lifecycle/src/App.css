@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+}
+.wrapper{
+  width: 60%;
+  margin: 30px auto;
+  border: 2px solid #999;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.list{
+  list-style: none;
+   
+}
+.list li {
+  padding: 10px 20px;
+  background: #b5d1ff;
+  border: 1px solid #6ba1fa;
+  margin: 1px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+}
+h1{
+  text-align: center;
+}
+.btn {
+  padding: 10px 20px;
+  background: #faa7ce;
+  margin: 10px auto;
+  font-size: 20px;
+  display: block;
+
+}
