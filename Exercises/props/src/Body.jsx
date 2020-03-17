@@ -4,11 +4,9 @@ export class Body extends Component {
   render() {
     return (
       <div>
-        <input
-          type='text'
-          onChange={this.props.changeHandler}
-          placeholder={this.props.newValue}
-        />
+        <input name='title' type='text' onChange={this.props.changeHandler} />
+
+        <input name='footer' type='text' onChange={this.props.changeHandler} />
       </div>
     );
   }
