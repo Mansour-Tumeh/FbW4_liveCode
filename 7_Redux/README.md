@@ -52,7 +52,7 @@ export  default  store;
 This folder should include **one index.js** which have inside the rootReducer  which will be indeed  the combineReducers, that combines  all the different reducers that you might need in your application such as below :
 
 ```bash
-import { combineReducers } from  './node_modules/redux'
+import { combineReducers } from  'redux'
 import  postReducer  from  './postReducer'
 //other reducers might be and should be imporetd as well here
 
