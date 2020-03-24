@@ -114,7 +114,7 @@ dispatch({
      })
 
 ```
-## Step 3 : Connect Reux with React :
+## Step 3 : Connect Redux with React :
 
 ### Now you need to visit the react components as below :
 
