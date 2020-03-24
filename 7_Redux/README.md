@@ -32,7 +32,7 @@ redux-thunk is a Redux Middleware that lets you  have Asynchronous Redux Actions
 
 ![](https://image.slidesharecdn.com/reduxdataflowwithangular2-161118085712/95/redux-data-flow-with-angular-2-19-638.jpg?cb=1479459463)
 
-### 1- Components Folder:
+### 1- Components Folder (the view in the above chart):
 This folder should include all you React components from the App.jsx to any small components, you might also have inside **Components Folder** the whole react app folders structure as it was in react before using redux.
 ### 2- Store Folder:
 This folder should include one index.js which have inside the store.
@@ -52,7 +52,7 @@ export  default  store;
 This folder should include **one index.js** which have inside the rootReducer  which will be indeed  the combineReducers, that combines  all the different reducers that you might need in your application such as below :
 
 ```bash
-import { combineReducers } from  './node_modules/redux'
+import { combineReducers } from  'redux'
 import  postReducer  from  './postReducer'
 //other reducers might be and should be imporetd as well here
 
@@ -114,7 +114,7 @@ dispatch({
      })
 
 ```
-## Step 3 : Connect Reux with React :
+## Step 3 : Connect Redux with React :
 
 ### Now you need to visit the react components as below :
 
