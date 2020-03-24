@@ -197,7 +197,7 @@ export  default  connect(mapStateToProps, { fetchPosts })(Posts);
 
 ```
 
-## Step 4 : Finally, you maight add the Redux-Dev-Tools enhancer :
+## Step 4 : Finally, you might add the Redux-Dev-Tools enhancer :
 
 Thsi is an optional step to enable the redux dev tools in the browser it should be added to the store as below :
 
