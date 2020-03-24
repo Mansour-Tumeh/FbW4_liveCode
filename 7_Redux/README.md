@@ -112,7 +112,7 @@ dispatch({
       type:  FETCH_POSTS,
       payload:  res.data
      })
-
+}
 ```
 ## Step 3 : Connect Redux with React :
 
