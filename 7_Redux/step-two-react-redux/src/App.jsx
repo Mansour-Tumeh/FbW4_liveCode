@@ -6,7 +6,7 @@ import Posts from './components/Posts.jsx';
 //import PostForm from './components/PostForm.jsx';
 
 import { Provider } from 'react-redux';
-import store from './store/store';
+import store from './store';
 
 class App extends Component {
   render() {
