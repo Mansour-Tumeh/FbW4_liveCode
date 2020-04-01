@@ -1,0 +1,23 @@
+//console.log('Hello Guys From FbW4 :)')
+//import {person} from './person'
+//const participant = require('./person')
+// const Person = require('./person') // the require() is CommonJS script
+
+// const participant = new Person('Clemens', 40)
+
+// participant.inroMe()
+//console.log(participant)
+
+// const Logger = require('./logger')
+
+// const dciLog = new Logger();
+// //console.log(dciLog)
+
+// dciLog.on('success', data => {
+//     console.log('Called Listener', data)
+// })
+// dciLog.on('wrong', data => {
+//     console.log('Called Listener', data)
+// })
+// dciLog.log('fbw3_final_presentation', 'tech-error')
+// dciLog.log('fbw4_final_presentation', 'heroes')
