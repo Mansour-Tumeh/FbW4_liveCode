@@ -1,0 +1,19 @@
+{
+  "name": "nodejs_first_code",
+  "version": "1.0.0",
+  "description": "Fisrt Example in our NodeJs topic",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "author": "Safwan",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "uuid": "^7.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
