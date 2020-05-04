@@ -13,14 +13,16 @@ router.get('/get-review', async (req,res)=>{
 
 router.post('/new-review', (req,res) =>{
     // using destructive assingment to get the data from the body request.
-    let {title,rating,comment} = req.body;
+    let {title,rating,comment,movieTitle,movieID} = req.body;
 
     //Creating the new document for reviews. It is needed to use the Model created
     // for the collection. In this case the MovieReviews model.
     let newReview = new MovieReviews({
         title:title,
         rating:parseInt(rating),
-        comment:comment
+        comment:comment,
+        movieTitle:movieTitle,
+        movieID:movieID
     })
 
     //After creating the new document, it is needed to save it on the MongoDB server
@@ -40,14 +42,16 @@ router.post('/new-review', (req,res) =>{
 router.put('/update-review', (req,res) => {
     //Here again using destructive assignment. Is important to notice we are getting
     //the id also here, as it is needed to know which document we want to update
-    let {title,rating,comment,id} = req.body;
+    let {title,rating,comment,id,movieTitle,movieID} = req.body;
 
     //Here we are creating an object with the data we want to update. this object will
     //be passed to the method to update the document in the MongoDB server.
     let newData = {
         title:title,
         rating:parseInt(rating),
-        comment:comment
+        comment:comment,
+        movieTitle:movieTitle,
+        movieID:movieID
     }
 
     //To update it is needed to use the model of the collection that has the
@@ -78,6 +82,16 @@ router.delete('/delete-review',(req,res) => {
         res.send({msg: error})
     })
 
+})
+
+//http://google.com/?search="javascript"&lan=english
+// Everything after the question mark (?) is taked as query variables.
+router.get('/get-reviews-movie', async (req,res)=>{
+    let movieID_req = req.query.movieid;
+
+    let reviews = await MovieReviews.find({movieID:movieID_req});
+
+    res.send(reviews)
 })
 
 

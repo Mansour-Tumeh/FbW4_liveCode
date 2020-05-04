@@ -21,6 +21,14 @@ const MovieReviewsSchema = new mongoose.Schema({
    date: {
        type: Date,
        default: Date.now
+   },
+   movieTitle: {
+       type: String,
+       required: true
+   },
+   movieID: {
+       type: String,
+       required: true
    } 
 });
 
