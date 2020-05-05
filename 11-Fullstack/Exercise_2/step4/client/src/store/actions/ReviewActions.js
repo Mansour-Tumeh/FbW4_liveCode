@@ -92,11 +92,11 @@ const saveReviewsFail = (error) => ({
     payload: error
 })
 
-export const getMovieReviews  = (data) => {
+export const saveReviews  = (data) => {
     
     return dispatch => {
 
-        return serverapi.getMovieReview(data)
+        return serverapi.saveReview(data)
                 .then(response => {
                     dispatch(saveReviewsSuccess(response.data))
                 }).catch(error=>{
@@ -115,11 +115,11 @@ const updateReviewsFail = (error) => ({
     payload: error
 })
 
-export const getMovieReviews  = (data) => {
+export const updateReviews  = (data) => {
     
     return dispatch => {
 
-        return serverapi.getMovieReview(data)
+        return serverapi.updateReview(data)
                 .then(response => {
                     dispatch(updateReviewsSuccess(response.data))
                 }).catch(error=>{
@@ -139,11 +139,11 @@ const deleteReviewsFail = (error) => ({
     payload: error
 })
 
-export const getMovieReviews  = (data) => {
+export const deleteReviews  = (data) => {
     
     return dispatch => {
         config = {data:data}
-        return serverapi.getMovieReview(data)
+        return serverapi.deleteReview(data)
                 .then(response => {
                     dispatch(deleteReviewsSuccess(response.data))
                 }).catch(error=>{
