@@ -1,13 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Table from './Components/Table'
+import store from './store'
+import {Provider} from 'react-redux'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+
 
 function App() {
   return (
-    <div className="App">
-        <Table/>
-    </div>
+    <Provider store={store}> 
+      <Router>
+
+        <Switch>
+          
+        </Switch>
+      </Router>
+    </Provider>
   );
 }
 
