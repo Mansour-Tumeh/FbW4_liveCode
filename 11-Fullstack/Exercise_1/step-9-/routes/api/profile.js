@@ -52,6 +52,23 @@ router.post('/', [auth, [
             errors: errors.array()
         })
     }
+
+    const {
+        company,
+        location,
+        website,
+        bio,
+        skills,
+        status,
+        githubusername,
+        youtube,
+        twitter,
+        instagram,
+        linkedin,
+        facebook
+    } = req.body;
+
+    //Create Profile fields and Profile object
 })
 
 
