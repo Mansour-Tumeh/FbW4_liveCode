@@ -42,7 +42,7 @@ con.connect((err)=>{
             }
         })
 
-        con.query(` INSERT INTO www.users(username,fullname,password) VALUES ('adminuser','admin','admin')`, (err,result) => {
+        con.query(`INSERT INTO www.users(username,fullname,password) VALUES ('adminuser','admin','admin')`, (err,result) => {
             if(err){
                 console.log(err)
             }else{
@@ -51,5 +51,4 @@ con.connect((err)=>{
         })
 
     }
-
 })
