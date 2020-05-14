@@ -61,6 +61,13 @@ nav ul li a:hover
 {
     float: right;
 }
+.imageLogin{
+    height: 250px;
+}
+.imageReg{
+    width: 445px;
+    height: 250px;
+}
 .image, .join-us-img
 {
     display: block;

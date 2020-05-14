@@ -81,7 +81,7 @@ router.post('/register', async (req,res) => {
 
 })
 
-//loggout route
+//loggout route 
 router.get('/loggout',(req,res)=>{
 
     if(req.session.user){
